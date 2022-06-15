@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,sass,md,json,html}"
   },
   "dependencies": {
     "@testing-library/dom": "^8.13.0",
@@ -30,6 +31,7 @@
     "eslint-plugin-react": "^7.30.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",
+    "prettier": "^2.7.0",
     "vite": "^2.9.9",
     "vite-plugin-eslint": "^1.6.1"
   }
