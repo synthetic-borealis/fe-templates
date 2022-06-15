@@ -13,12 +13,12 @@ const App: Component = () => {
         <p>Hello Vite + Solid!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+            count is: {count()}
           </button>
         </p>
         <Show when={count() > 0}>
           <p>
-            <code>The count is now: {count}</code>
+            <code>The count is now: {count()}</code>
           </p>
         </Show>
         <p>
