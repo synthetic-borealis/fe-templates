@@ -1,5 +1,5 @@
 {
-  "name": "ts-jest-template-solid",
+  "name": "solid-ts",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json}"
   },
   "license": "MIT",
   "devDependencies": {
@@ -28,6 +29,7 @@
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "jsdom": "^19.0.0",
+    "prettier": "^2.7.0",
     "regenerator-runtime": "0.13.9",
     "solid-jest": "^0.2.0",
     "solid-testing-library": "^0.3.0",

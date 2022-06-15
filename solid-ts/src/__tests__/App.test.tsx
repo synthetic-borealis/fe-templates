@@ -1,4 +1,4 @@
-import { render, fireEvent, screen } from 'solid-testing-library';
+import { render, fireEvent, screen } from "solid-testing-library";
 import App from "../App";
 
 test("Renders main page correctly", async () => {
