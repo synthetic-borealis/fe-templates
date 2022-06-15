@@ -9,7 +9,7 @@ test("Renders main page correctly", async () => {
   const buttonCount = await screen.findByRole("button");
   let codeCount = await screen.queryByText(/The count is now:/);
 
-  // Pre-exceptions
+  // Pre-expectations
   expect(buttonCount.innerHTML).toBe("count is: 0");
   expect(codeCount).not.toBeInTheDocument();
 
@@ -18,7 +18,7 @@ test("Renders main page correctly", async () => {
   await user.click(buttonCount);
   codeCount = await screen.queryByText(/The count is now:/);
 
-  // Post-exceptions
+  // Post-expectations
   expect(buttonCount.innerHTML).toBe("count is: 2");
   expect(codeCount).toBeInTheDocument();
 });
