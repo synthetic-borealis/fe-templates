@@ -1,10 +1,9 @@
-import { Component, createSignal, Show } from "solid-js";
-
+import { createSignal, Show } from "solid-js";
 import logo from "./logo.svg";
 import "./App.css";
 
-const App: Component = () => {
-  const [count, setCount] = createSignal<number>(0);
+function App() {
+  const [count, setCount] = createSignal(0);
 
   return (
     <div class="App">
@@ -46,6 +45,6 @@ const App: Component = () => {
       </header>
     </div>
   );
-};
+}
 
 export default App;

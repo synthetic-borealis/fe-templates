@@ -27,7 +27,7 @@ const App: Component = () => {
         <p>
           <a
             class="App-link"
-            href="https://github.com/solidjs/solid"
+            href="https://www.solidjs.com/tutorial"
             target="_blank"
             rel="noopener noreferrer"
           >
