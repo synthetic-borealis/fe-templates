@@ -4,11 +4,15 @@
         "es2021": true
     },
     "extends": [
-        "airbnb",
-        "airbnb/hooks",
-        "prettier",
+        "eslint:recommended",
+        "plugin:react/recommended",
         "plugin:jest/recommended"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "overrides": [
     ],
     "parserOptions": {
@@ -18,11 +22,6 @@
     "plugins": [
         "react"
     ],
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
-    },
     "rules": {
     }
 }
