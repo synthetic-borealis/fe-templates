@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import App from '../App';
 
@@ -14,8 +14,12 @@ test('Renders main page correctly', async () => {
   expect(codeCount).not.toBeInTheDocument();
 
   // Init
-  await user.click(buttonCount);
-  await user.click(buttonCount);
+  await act(async () => {
+    await user.click(buttonCount);
+  });
+  await act(async () => {
+    await user.click(buttonCount);
+  });
   codeCount = await screen.queryByText(/The count is now:/);
 
   // Post-expectations
