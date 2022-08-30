@@ -1,8 +1,8 @@
-import React, { useState, FunctionComponent } from "react";
-import logo from "./logo.svg";
-import "./App.scss";
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './App.scss';
 
-const App: FunctionComponent = () => {
+function App() {
   const [count, setCount] = useState(0);
 
   return (
@@ -11,7 +11,7 @@ const App: FunctionComponent = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React + Sass!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => setCount(() => count + 1)}>
             count is: {count}
           </button>
         </p>
@@ -32,7 +32,7 @@ const App: FunctionComponent = () => {
           >
             Learn React
           </a>
-          {" | "}
+          {' | '}
           <a
             className="App-link"
             href="https://vitejs.dev/guide/features.html"
@@ -45,6 +45,6 @@ const App: FunctionComponent = () => {
       </header>
     </div>
   );
-};
+}
 
 export default App;
