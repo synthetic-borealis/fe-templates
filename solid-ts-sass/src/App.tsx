@@ -16,7 +16,7 @@ const App: Component = () => {
             count is: {count()}
           </button>
         </p>
-        <Show when={count() > 0}>
+        <Show when={count() > 0} keyed>
           <p>
             <code>The count is now: {count()}</code>
           </p>
