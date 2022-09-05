@@ -5,7 +5,7 @@ import App from '../App';
 
 test('Renders main page correctly', async () => {
   // Setup
-  render(<App />);
+  render(<App/>);
   const buttonCount = await screen.findByRole('button');
   let codeCount = await screen.queryByText(/The count is now:/);
 
