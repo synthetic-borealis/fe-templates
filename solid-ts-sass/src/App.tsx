@@ -1,7 +1,7 @@
-import { Component, createSignal, Show } from "solid-js";
+import { Component, createSignal, Show } from 'solid-js';
 
-import logo from "./logo.svg";
-import "./App.scss";
+import logo from './logo.svg';
+import './App.scss';
 
 const App: Component = () => {
   const [count, setCount] = createSignal<number>(0);
@@ -9,7 +9,7 @@ const App: Component = () => {
   return (
     <div class="App">
       <header class="App-header">
-        <img src={logo} class="App-logo" alt="logo" />
+        <img src={logo} class="App-logo" alt="logo"/>
         <p>Hello Vite + Solid!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
@@ -33,7 +33,7 @@ const App: Component = () => {
           >
             Learn Solid
           </a>
-          {" | "}
+          {' | '}
           <a
             class="App-link"
             href="https://vitejs.dev/guide/features.html"
