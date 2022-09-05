@@ -6,12 +6,13 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:solid/recommended",
+    "plugin:jest/recommended",
   ],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["solid"],
+  plugins: ["solid", "jest"],
   rules: {},
   settings: {
     "import/resolver": {
