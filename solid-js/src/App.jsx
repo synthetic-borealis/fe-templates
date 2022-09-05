@@ -15,7 +15,7 @@ function App() {
             count is: {count()}
           </button>
         </p>
-        <Show when={count() > 0} keyed="false">
+        <Show when={count() > 0} keyed>
           <p>
             <code>The count is now: {count()}</code>
           </p>
