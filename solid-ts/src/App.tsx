@@ -9,7 +9,7 @@ const App: Component = () => {
   return (
     <div class="App">
       <header class="App-header">
-        <img src={logo} class="App-logo" alt="logo"/>
+        <img src={logo} class="App-logo" alt="logo" />
         <p>Hello Vite + Solid!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
