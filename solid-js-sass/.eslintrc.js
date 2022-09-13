@@ -4,21 +4,22 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:solid/recommended",
-    "plugin:jest/recommended",
+    'eslint:recommended',
+    'plugin:solid/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:jest/recommended',
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["solid", "jest"],
+  plugins: ['solid', 'jsx-a11y', 'jest'],
   rules: {},
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        paths: ["src"],
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
   },
