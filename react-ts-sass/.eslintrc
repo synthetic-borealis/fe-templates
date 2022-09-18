@@ -7,17 +7,21 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "prettier",
     "plugin:jest/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [
     {
-      "files": ["src/**/*.tsx"],
+      "files": [
+        "src/**/*.tsx"
+      ],
       "rules": {
-        "@typescript-eslint/no-unused-vars": ["warn", {
-          "varsIgnorePattern": "React"
-        }]
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "varsIgnorePattern": "React"
+          }
+        ]
       }
     }
   ],
@@ -27,6 +31,9 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {}
 }
