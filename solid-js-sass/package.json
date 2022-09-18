@@ -1,6 +1,7 @@
 {
   "name": "solid-js-sass",
   "version": "0.0.0",
+  "license": "MIT",
   "description": "",
   "scripts": {
     "dev": "vite",
@@ -8,10 +9,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "test": "jest",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,sass,md,json,html}"
+    "test": "jest"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
@@ -27,7 +26,6 @@
     "jest": "^29.0.3",
     "jest-environment-jsdom": "^29.0.3",
     "jsdom": "^20.0.0",
-    "prettier": "^2.7.1",
     "sass": "^1.54.9",
     "solid-jest": "^0.2.0",
     "solid-testing-library": "^0.3.0",
