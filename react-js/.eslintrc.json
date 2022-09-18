@@ -6,7 +6,6 @@
     "extends": [
         "airbnb",
         "airbnb/hooks",
-        "prettier",
         "plugin:jest/recommended"
     ],
     "overrides": [
